@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="head.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap"
+      rel="stylesheet"
+    />
+  <title>Game MTM</title>
+</head>
+<body>
+  <header>
+    <h1>Game Math</h1>
+    <div class="topper">
+    <div class="rules">
+      <h3>Game rules:</h3>
+      <p>&#8618; The runtime is 45 seconds;<br>
+      <p>&#8618; Mandatorily choose a difficulty and operation;<br>
+      <p>To start, click on the start button;<br>
+      <p>&#8618; After filling in the response field, confirm with the Enter key;<br>
+      <p>To restart, click the reset button;<br>
+      <p>&#8618; Whoever gets the most hits in that time frame is the winner;<br>
+    </div>
+
+    <div class="picture">
+      <img src="./images/Cérebro Pensando e Confuso.png">
+    </div>
+  </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="operations">
+        <div class="selects">
+        <select name="Difficulty" id="difficulty" class="difficulty flex-1" onchange="prepGame.selectDifficulty(event)" >
+            <option value="0">Difficulty level</option>
+						<option value="e">Easy</option>
+						<option value="m">Medium</option>
+						<option value="h">Hard</option>
+        </select>
+       
+        <select name="Operation" id="operation" class="operation flex-1" onchange="prepGame.selectOperation(event)" >
+            <option value="0">Operation type</option>
+						<option value="+">Addition</option>
+						<option value="-">Subtraction</option>
+						<option value="*">Multiplication</option>
+        </select>
+        <button id="start" class="start" onclick="startGame.init()">Start</button></div>
+        <div class="data-inputs">
+        <input type="text" class="inputs" id="input1" readonly>
+        <label id="signal">≫</label>
+        <input type="text" class="inputs" id="input2" readonly> <span>=</span>
+        <input type="text" class="inputs answer" id="input3" placeholder="Answer here" onkeydown="analyzeData.analyzeResponse(event)">
+        <button class="resetButton" onclick="resetGame.reset()">Reset</button>
+        
+      </div>
+      </div>
+      <div class="results1">
+      <div class="results2">
+        <label class="hits" id="hits">Hits &#8811; 0</label>
+        <label class="erros" id="errors">Errors &#8811; 0</label>
+        <label class="time" id="time">Time &#8811; 45s</label>
+      </div>
+    </div>
+    </div>
+  </main>
+<footer class="rodap">
+    <p>jota.GAME</p>
+  </footer>
+
+  <script src="MTM.js"></script> 
+</body>
+</html>

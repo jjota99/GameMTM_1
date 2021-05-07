@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 4%;
+}
+
+.operations {
+  background-image: linear-gradient(#160a41, #1c2340);
+  border: 2px #154c79 solid;
+  border-radius: 0.2rem;
+  padding: 15px;
+}
+
+.selects {
+  display: flex;
+}
+
+.selects > :not(:first-child) {
+  margin-left: 10px;
+}
+
+.difficulty {
+  width: 15rem;
+  border-radius: 0.2rem;
+  border: 2px #1288e8 solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 530;
+  background: #32395e;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.difficulty:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.operation {
+  width: 15rem;
+  border-radius: 0.2rem;
+  border: 2px #1288e8 solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 530;
+  background: #32395e;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.operation:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.start {
+  width: 8rem;
+  border-radius: 0.2rem;
+  border: 2px #1288e8 solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 530;
+  background: #32395e;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.start:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.data-inputs {
+  display: flex;
+  margin-top: 0.7rem;
+  align-items: center;
+}
+
+.data-inputs > :not(:first-child) {
+  margin-left: 10px;
+}
+
+.inputs {
+  flex: 1;
+  width: 8.9rem;
+  border-radius: 0.2rem;
+  border: 2px #1288e8 solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 530;
+  background: #32395e;
+  color: rgb(247, 241, 241);
+}
+
+.results1 {
+  padding: 0 111px;
+}
+
+.results2 {
+  width: 12rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(247, 239, 239);
+  font-size: 17px;
+  background-image: linear-gradient(#160a41, #1c2340);
+  border: 2px #154c79 solid;
+  border-radius: 0.2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.resetButton {
+  width: 8rem;
+  border-radius: 0.2rem;
+  border: 2px #1288e8 solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 530;
+  background: #32395e;
+  color: #fff;
+  opacity: 0.9;
+}
+.resetButton:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(#3887fe, #3ba0ff, #5fb2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: auto;
+}
+
+.flex-1 {
+  flex: 1;
+}
